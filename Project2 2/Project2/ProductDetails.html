@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="./Css/Home.css">
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+ <style>
+   
+  </style>
+</head>
+<body>
+    <!-- Start navbar section -->
+    <div class="navbar-wrapper text-white">
+        <!-- starting of the first part of the navbar -->
+         <div class=" navbar container  row m-auto">
+             <div class="logo col-lg-2 col-md-3 col-sm-12 col-xs-12 text-dark  d-flex justify-content-center align-items-center ">
+                 <h5>Online 
+                     <span> Retail</span></h5>
+             </div>
+             <div class="search-bar col-lg-7 col-md-6 col-sm-9 col-xs-9 text-center d-flex justify-content-center ">
+                 <div class=" search col-lg-10 col-md-10 col-sm-10 col-xs-10 d-flex  ">
+                     <input type="text" placeholder=" Search Product Here..." class="col-lg-10 border">
+                     <button class="search-btn col-lg-2 col-md-2 col-sm-2 col-xs-2"><i class="fa-solid fa-magnifying-glass text-white"></i></button>
+                 </div>
+             </div>
+             <div class="shop-cart col-lg-3 col-md-3 col-sm-3 col-xs-3 text-center justify-content-around  ">
+                 <div ><a href="#" class="user"><i class="fa-solid fa-user "></i><span>My Account</span></a></div>
+                 <i class=" cart fa-brands fa-opencart fa-2x "><div class="count">0</div></i>
+                 
+             </div>
+         </div>
+         <!-- End of the first part of the navbar -->
+ 
+         <!-- Starting of the second part of the navbar -->
+         <div class="second-nav row m-auto   ">
+            
+            <div class=" links-wrapper col-lg-8 col-md-8 col-sm-8 col-xs-8 d-flex  pt-2  ">
+                <div class="hamburger col-lg-1  col-md-1 col-sm-1" ><i class="fa-solid fa-bars text-dark "></i></div>
+               <div class="col-lg-11 col-md-11 col-sm-11 ">
+                <ul class="links d-flex justify-content-around">
+                    <li><a href="./Product.html" class="active">Home</a></li>
+                    <li><a href="./Aboutus.html">About Us</a></li>
+                    <li><a href="./Services.html">Our Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="./Product.html" class="productPage">Available Items</a></li>
+                </ul>
+               </div> 
+            </div>
+
+            <div class="buttons col-lg-3 col-md-3 col-sm-3 col-xs-3  d-flex justify-content-center align-items-center">
+               
+               <button class="login-btn px-2 py-1"><a href="./login.html">Login/Sign Up</a></button>
+                            
+            </div>
+           
+        </div>
+         <!-- End of the second part of the navbar -->
+     </div>
+    <!-- End of the navbar section -->
+
+
+    <!-- start of the content area -->
+    
+    <!-- start of the related product area -->
+    <div class="contianer content-area py-4  ">
+        <div class="container mt-4 py-3 row m-auto border ">
+           
+            <div class="col-lg-7 col-md-12 col-sm-12">
+                <img id="productimage" src="" alt="Product Image" width="100%" height="600px">
+            </div>
+            <div class=" product-details col-lg-5 col-md-12 col-sm-12  ">
+                <div class="product-info mt-3 ">
+                    <p >Mens > Shoes > Sneaker</p>
+                <h4 id="productname"></h4>
+                <div class="rate-rating row m-auto d-flex justify-content-between pt-1 ">
+                    <div class="rate col-3"><h5 class="text-danger sellingprice">Rs. </h5></div>
+                    <div class=" rating text-center col-4">
+                        <i class="fa-solid fa-star checked"></i>
+                        <i class="fa-solid fa-star checked"></i>
+                        <i class="fa-solid fa-star checked"></i>
+                        <i class="fa-solid fa-star checked"></i>
+                        <i class="fa-solid fa-star "></i>
+                        <!-- <p>reviews</p> -->
+                    </div> 
+                
+                </div>
+                </div>
+                <div class="color-pick ">
+                    <h6>Color:</h6>
+                </div>
+                <div class="size-pick row m-auto">
+                    <select class="select col-lg-3 col-md-3 col-sm-3" >
+                        <option>Select Size</option>
+                        <option>XXL</option>
+                        <option>XL</option>
+                        <option>Large</option>
+                        <option>Medium</option>
+                        <option>Small</option>
+                        <!-- <option>Select Size</option> -->
+                    </select>
+                   <div class="quantity d-flex justify-content-center align-items-center  ">
+                    <h5>Qty.</h5>
+                    <button class="button rounded" onclick="decrease()" >-</button>
+                    <h5 id="number"></h5>
+                    <button class="button rounded" onclick="increase()">+</button>
+                   </div>
+                    <!-- <input class="px-2 col-lg-3 col-md-3 col-sm-3" type="number"  placeholder="Qty." > -->
+                </div>
+                <div class="buttons ">
+                    <button class="button cartbutton"> <i class="cart fa-brands fa-opencart"></i> Add to Cart</button>
+                    <button class="button"><i class="fa-solid fa-heart"></i>wishlist</button>
+                </div>
+                <div class="details py-4">
+                    <h6>Product Details</h6>
+                    <p>  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, molestiae?</p>
+                </div>
+                <div class="info-buttons d-flex justify-content-between ">
+                    <p>Delivery & Returns:<a href="" class="link">More Details</a></p>
+                    <a href="" class="link">Contact Us</a>
+                </div>
+            </div>
+            
+        </div>
+        <div class=" review container py-2 border mt-2">
+            <div class="header container  py-1 text-center">
+                <h5>Product Reviews</h5>
+                <h6  >Sort by: </h6> 
+            </div>
+            <div class=" product-review container border ">
+                <div class="header py-2">
+                    <h6>by User Name</h6>
+                    <h6>6th November 2022</h6>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero deserunt ratione voluptatum delectus voluptas. Voluptates! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat natus quisquam eius iusto mollitia neque.</p>
+                <div class="container py-2 d-flex justify-content-between ">
+                    <div class="d-flex"><i class="like fa-regular fa-thumbs-up  "></i> <h6 class="pl-2">0</h6></div>
+                    <div class="d-flex"><i class=" like fa-regular fa-ellipsis-vertical"></i></div>
+                </div>
+            </div>
+            <div class=" product-review container border">
+                <div class="header py-2">
+                    <h6>by User Name</h6>
+                    <h6>6th November 2022</h6>
+                </div>
+                <p> Libero deserunt ratione voluptatum delectus voluptas. Voluptates! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat natus quisquam eius iusto mollitia neque.</p>
+                <div class="container py-2 d-flex justify-content-between ">
+                    <div class="d-flex"><i class="fa-regular fa-thumbs-up checked"></i> <h6 class="pl-2">10</h6></div>
+                    <div class="d-flex"><i class="fa-regular fa-ellipsis-vertical"></i></div>
+                </div>
+            </div>
+            <div class=" product-review container border">
+                <div class="header py-2">
+                    <h6>by User Name</h6>
+                    <h6>6th November 2022</h6>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero deserunt ratione voluptatum delectus voluptas. Voluptates! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat natus quisquam eius iusto mollitia neque.</p>
+                <div class="container py-2 d-flex justify-content-between ">
+                    <div class="d-flex"><i class="fa-regular fa-thumbs-up"></i> <h6 class="pl-2">0</h6></div>
+                    <div class="d-flex"><i class="fa-regular fa-ellipsis-vertical"></i></div>
+                </div>
+            </div>
+        </div>
+       <div class="container  py-3 border mt-2">
+        <div class="header  row container m-auto text-center d-flex justify-content-between align-items-center ">
+            <h5>Related Product</h5>
+            <h6>View More</h6>
+        </div>
+        <div class=" related-product container text-center d-flex">
+            <div class=" product-card col-lg-3 col-md-5 col-sm-7 col-xs-5 mt-4">
+                <div class="  card ">
+                    <div id="overlay">
+                        <div class="box">
+                            <ul class="d-flex justify-content-around align-items-center">
+                                <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                                <li><a href="#" class="cart-btn"><i class="fa-brands fa-opencart"></i></a></li>
+                                <li><a href="#"><i class="fa-regular fa-circle-info"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product-image "><img src="./images/shoes.jpeg" alt="" height="100%" width="100%"></div>
+                    <div class="product-content container pt-3  ">
+                        <div class="product-name"><h6>Sneaker Shoes</h6></div>
+                        <div class="price  d-flex justify-content-between align-items-center">
+                            <p>Rs.1000</p>
+                            <del><p>Rs.2000</p></del>
+                        </div>
+                        <div class=" rating p-2  text-center ">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star "></i>
+                        </div> 
+                        
+                    </div>
+                   
+                    
+                </div>
+            </div>
+            <div class="product-card col-lg-3 col-md-5 col-sm-7 col-xs-5 mt-4 ">
+                <div class="  card">
+                    <div id="overlay">
+                        <div class="box">
+                            <ul class="d-flex justify-content-around align-items-center">
+                                <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                                <li><a href="#" class="cart-btn"><i class="fa-brands fa-opencart"></i></a></li>
+                                <li><a href="#"><i class="fa-regular fa-circle-info"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product-image "><img src="./images/jordan.jpeg" alt="" height="100%" width="100%"></div>
+                    <div class="product-content container pt-3  ">
+                        <div class="product-name"><h6>Jordan Shoes</h6></div>
+                        <div class="price  d-flex justify-content-between align-items-center">
+                            <p>Rs.7500</p>
+                            <del><p>Rs.8500</p></del>
+                        </div>
+                        <div class=" rating p-2  text-center">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star "></i>
+                        </div> 
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="product-card col-lg-3 col-md-5 col-sm-7 col-xs-5 mt-4">
+                <div class="  card">
+                    <div id="overlay">
+                        <div class="box">
+                            <ul class="d-flex justify-content-around align-items-center">
+                                <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                                <li><a href="#" class="cart-btn"><i class="fa-brands fa-opencart"></i></a></li>
+                                <li><a href="#"><i class="fa-regular fa-circle-info"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product-image "><img src="./images/black-shoes.png" alt="" height="100%" width="100%"></div>
+                    <div class="product-content container pt-3  ">
+                        <div class="product-name"><h6>T-shirt</h6></div>
+                        <div class="price  d-flex justify-content-between align-items-center">
+                            <p>Rs.550</p>
+                            <del><p>Rs.650</p></del>
+                        </div>
+                        <div class=" rating p-2  text-center ">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star "></i>
+                            <i class="fa-solid fa-star "></i>
+                        </div> 
+                        
+                    </div>
+                   
+                    
+                </div>
+            </div>
+            <div class="product-card col-lg-3 col-md-5 col-sm-7 col-xs-5 mt-4">
+                <div class="  card">
+                    <div id="overlay">
+                        <div class="box">
+                            <ul class="d-flex justify-content-around align-items-center">
+                                <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                                <li><a href="#" class="cart-btn"><i class="fa-brands fa-opencart"></i></a></li>
+                                <li><a href="#"><i class="fa-regular fa-circle-info"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product-image "><img src="./images/addidas-shoes.jpeg" alt="" height="100%" width="100%"></div>
+                    <div class="product-content container pt-3  ">
+                        <div class="product-name"><h6>New Brand addidas Shoes</h6></div>
+                        <div class="price  d-flex justify-content-between align-items-center">
+                            <p>Rs.2400</p>
+                            <del><p>Rs.3000</p></del>
+                        </div>
+                        <div class=" rating p-2  text-center ">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star "></i>
+                        </div> 
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="product-card col-lg-3 col-md-5 col-sm-7 col-xs-5 mt-4">
+                <div class="  card">
+                    <div id="overlay">
+                        <div class="box">
+                            <ul class="d-flex justify-content-around align-items-center">
+                                <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                                <li><a href="#" class="cart-btn"><i class="fa-brands fa-opencart"></i></a></li>
+                                <li><a href="#"><i class="fa-regular fa-circle-info"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product-image "><img src="./images/addidas-shoes.jpeg" alt="" height="100%" width="100%"></div>
+                    <div class="product-content container pt-3  ">
+                        <div class="product-name"><h6  >new</h6></div>
+                        <div class="price  d-flex justify-content-between align-items-center">
+                            <p>Rs.2400</p>
+                            <del><p>Rs.3000</p></del>
+                        </div>
+                        <div class=" rating p-2  text-center ">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star "></i>
+                        </div> 
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="product-card col-lg-3 col-md-5 col-sm-7 col-xs-5 mt-4">
+                <div class="  card">
+                    <div id="overlay">
+                        <div class="box">
+                            <ul class="d-flex justify-content-around align-items-center">
+                                <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                                <li><a href="#" class="cart-btn"><i class="fa-brands fa-opencart"></i></a></li>
+                                <li><a href="#"><i class="fa-regular fa-circle-info"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product-image "><img src="./images/addidas-shoes.jpeg" alt="" height="100%" width="100%"></div>
+                    <div class="product-content container pt-3  ">
+                        <div class="product-name"><h6>New Brand addidas Shoes</h6></div>
+                        <div class="price  d-flex justify-content-between align-items-center border">
+                            <p>Rs.2400</p>
+                            <del><p>Rs.3000</p></del>
+                        </div>
+                        <div class=" rating p-2  text-center border">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star "></i>
+                        </div> 
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+           
+           
+        </div>
+       </div>
+    </div>
+    <!-- end of the related product area section -->
+
+    <!-- End of the content area -->
+
+
+    <!-- Start of the footer section -->
+    <div class=" container-fluid footer-wrapper ">
+        <div class="  footer-seciton   m-4 row d-flex justify-content-center ">
+
+        <div class="col-lg-3  col-md-4 col-sm-5  ">
+            <ul class="container  mt-3">
+                <li><h6>Top Categories</h6></li>
+                <li><a href="#" >Mens Wears</a></li>
+                <li><a href="#">Womens Wears</a></li>
+                <li><a href="#">Kids </a></li>
+                <li><a href="#">Electronics</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-5 ">
+            <ul class="container  mt-3">
+                <li><h6>Useful Links</h6></li>
+                <li><a href="./HomePage.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us </a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Track on order</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-5 ">
+            <ul class="container  mt-3">
+                <li><h6>Help</h6></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Refunds</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Terms and Conditions of Sales</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-5 ">
+            <ul class="container  mt-3">
+                <li><h6>Feedback</h6></li>
+                <li><a href="#">Leave a Feedback</a></li>
+                
+            </ul>
+        </div>
+        
+
+        </div>
+       
+
+    </div>
+    <div class="footer-buttom container-fluid row m-auto d-flex justify-content-center">
+        <div class="container-fluid d-flex">
+            <div class="col-lg-4">
+                <ul class="container  mt-3">
+                    <li ><h6>Find a store</h6>
+                        <ul >
+                            <li ><p>Find xyz@products Near You</p></li>
+                            <li><button class="find-btn col-lg-10 p-1">Store Locator</button></li>
+                            
+                        </ul>
+                    </li>
+                    
+                   
+                </ul>
+            </div>
+            <div class="col-lg-4  col-md-4 col-sm-4    ">
+                <ul class="container  mt-3">
+                    <li ><h6>Follow us</h6>
+                        <ul class="sublinks  col-8  ">
+                            <li class="twitter "><a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a></li>
+                            <li class="facebook"><a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a></li>
+                            <li class="instagram"><a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
+                            <li class="youtube"><a href="#"><i class="fa-brands fa-youtube fa-2x"></i></a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- <li><a href="#">Electronics</a></li> -->
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 ">
+                <ul class="container  mt-3">
+                    <li ><h6>Secure Online Payment</h6>
+                        <ul class="sublinks  col-8 ">
+                            <li><a href="#"><img src="./images/khalti.png" alt="" height="50px" width="50px"></a></li>
+                            <li><a href="#"><i class="fa-brands fa-cc-paypal fa-2x"></i></a></li>
+                            <li><a href="#"><img src="./images/e-sewa.jpeg" alt="" height="40px" width="40px"></a></li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- End of the Footer Section -->
+<script>
+  
+    var data=0;
+    document.getElementById("number").innerText=data;
+    
+        function decrease()
+        {
+            if(data>0)
+            {
+                data=data-1;
+            document.getElementById("number").innerText=data;
+
+            }
+            else{
+                data=0;
+
+            }
+            
+        }
+        function increase()
+        {
+            data=data+1;
+            document.getElementById("number").innerText=data;
+        }
+
+      
+
+        $(document).ready(function()
+        {
+            $('.hamburger').click(function()
+            {
+                $('.links').toggleClass('active');
+                
+            });
+            
+            
+            var count = 0;
+
+            $('.cart-btn').click(function()
+            {
+                count = count+1;
+                $('.count').html(count);
+
+              });
+
+            // $('.cartbutton').click(function()
+            // {
+            //     var url = window.location.href;
+            //             url += "#Shoppingcart";
+            //             window.history.pushState(null,null,url);
+            //             window.location.href = "#Shoppingcart.html";
+
+            // });
+             
+
+              var productId  = getParameterByName("id");
+            //   alert(productId);
+              $.ajax({
+                        type:'Get',
+                        url:"https://localhost:7086/api/product/" +productId,
+                        dataType:'json',
+                        success:function(data)
+                        {
+                        console.log(data);
+                        for(i=0;i<data.length;i++)
+                        {
+                            // console.log(data[i]["name"]);
+                           $("#productname").text(data[i]["name"]); 
+                            $(".details").text(data[i]["summary"]);
+                            $("#productimage").attr("src",data[i]["product_image"]);
+                            $(".sellingprice").text(data[i]["selling_price"]);
+                        }
+                        },
+                        error:function(error)
+                        {
+                        alert(error);
+                        }
+                    });
+
+       
+        });
+
+        function getParameterByName(name,url)
+        {
+            if(!url) url  =  window.location.href;
+            name  =  name.replace(/[\[\]]/g, "\\$&");
+            var regex  =  new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+            results = regex.exec(url);
+            if(!results) return null;
+            if(!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g,""));
+
+
+        }
+</script>
+    
+</body>
+</html>

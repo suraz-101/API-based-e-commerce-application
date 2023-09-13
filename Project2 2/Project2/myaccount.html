@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My account</title>
+    <link rel="stylesheet" href="./Css/Home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+    <!-- Start navbar section -->
+    <div class="navbar-wrapper text-white">
+        <!-- starting of the first part of the navbar -->
+         <div class=" navbar container  row m-auto">
+             <div class="logo col-lg-2 col-md-3 col-sm-12 col-xs-12 text-dark  d-flex justify-content-center align-items-center ">
+                 <h5>Online 
+                     <span> Retail</span></h5>
+             </div>
+             <div class="search-bar col-lg-7 col-md-6 col-sm-9 col-xs-9 text-center d-flex justify-content-center ">
+                 <div class=" search col-lg-10 col-md-10 col-sm-10 col-xs-10 d-flex  ">
+                     <input type="text" placeholder=" Search Product Here..." class="col-lg-10 border">
+                     <button class="search-btn col-lg-2 col-md-2 col-sm-2 col-xs-2"><i class="fa-solid fa-magnifying-glass text-white"></i></button>
+                 </div>
+             </div>
+             <div class="shop-cart col-lg-3 col-md-3 col-sm-3 col-xs-3 text-center justify-content-around  ">
+                 <div ><a  class="user"><i class="fa-solid fa-user "></i><span id="myAccount"></span></a></div>
+                 <i class=" cart fa-brands fa-opencart fa-2x "><div class="count">0</div></i>
+                 
+             </div>
+         </div>
+         <!-- End of the first part of the navbar -->
+ 
+         <!-- Starting of the second part of the navbar -->
+         <div class="second-nav row m-auto   ">
+            
+            <div class=" links-wrapper col-lg-8 col-md-8 col-sm-8 col-xs-8 d-flex  pt-2  ">
+                <div class="hamburger col-lg-1  col-md-1 col-sm-1" ><i class="fa-solid fa-bars text-dark "></i></div>
+               <div class="col-lg-11 col-md-11 col-sm-11 ">
+                <ul class="links d-flex justify-content-around">
+                    <li><a href="./Product.html" class="active">Home</a></li>
+                    <li><a href="./Aboutus.html">About Us</a></li>
+                    <li><a href="./Services.html">Our Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Available Items</a></li>
+                </ul>
+               </div> 
+            </div>
+
+            <div class="buttons col-lg-3 col-md-3 col-sm-3 col-xs-3  d-flex justify-content-center align-items-center">
+               
+               <button class="login-btn px-2 py-1"><a href="./login.html">Logout</a></button>
+                            
+            </div>
+           
+        </div>
+         <!-- End of the second part of the navbar -->
+     </div>
+    <!-- End of the navbar section -->
+
+
+    <!-- start of the content area -->
+    
+    <div class="contianer content-area py-4">
+        
+       <div class="container row m-auto ">
+           <div class="sidebar col-lg-3 ">
+              <div class="container border rounded">
+                <div class="profile ">
+                    <img src="./images/benzema.jpeg" alt="" width="100px" height="100px"> 
+                    <h6 class="name"></h6> 
+               </div>
+               <ul>
+                   <li>
+                    <i class="fa-solid fa-info"></i>
+                       <a href="#">Personal Data</a>
+                   </li>
+                   <li>
+                    <i class="fa-solid fa-box"></i>
+                       <a href="#" >Orders</a>
+                   </li>
+                   <li>
+                    <i class="fa-regular fa-heart"></i>
+                    <a href="#">My wishlists</a>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-key"></i>
+                        <a href="#">Chandge Password</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-house-chimney"></i>
+                        <a href="#">Address</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <a href="#">Sign out</a>
+                    </li>
+               </ul>
+              </div>
+
+           </div>
+           <div class="content-details col-lg-8 ">
+                <div class="container border rounded">
+                    <div class="my-detials">
+                        <div class="title">
+                            <h4>Personal Detials</h4>
+                        </div>
+                        <div class="subtitle mt-4">
+                            <h6>Perosnal Information</h6>
+                        </div>
+                        <div class="contents">
+                            <div class="content d-flex justify-content-between">
+                                <div class="f-name  ">
+                                    <label for="Fname">Full Name</label> 
+                                <input class="fname" type="text">
+                                </div>
+                                <div class="content">
+                                    <label for="email">Email address</label>
+                                    <input class="email" type="text">
+                                </div>
+                               
+                            </div>
+                            <div class="content">
+                                <label for="username">Username</label>
+                                <input class="username" type="text">
+                            </div>
+                            <div class="content">
+                                <label for="dob">Phone Number</label>
+                                <input class="contact" type="text">
+                            </div>
+                        </div>
+                       <div class="updatebutton p-2 "><button class="d-flex justify-content-center">update</button></div>
+                        
+                    </div>
+                    <!-- order details starts Here -->
+                    <div class="orders">
+                        <h1>Orders</h1>
+                    </div>
+                    <!-- order details ends here -->
+                </div>
+           </div>
+           
+       </div>
+    </div>
+    <!-- End of the content area -->
+
+
+    <!-- Start of the footer section -->
+    <div class=" container-fluid footer-wrapper ">
+        <div class="  footer-seciton   m-4 row d-flex justify-content-center ">
+
+        <div class="col-lg-3  col-md-4 col-sm-5  ">
+            <ul class="container  mt-3">
+                <li><h6>Top Categories</h6></li>
+                <li><a href="#" >Mens Wears</a></li>
+                <li><a href="#">Womens Wears</a></li>
+                <li><a href="#">Kids </a></li>
+                <li><a href="#">Electronics</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-5 ">
+            <ul class="container  mt-3">
+                <li><h6>Useful Links</h6></li>
+                <li><a href="./HomePage.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us </a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Track on order</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-5 ">
+            <ul class="container  mt-3">
+                <li><h6>Help</h6></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Refunds</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Terms and Conditions of Sales</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-5 ">
+            <ul class="container  mt-3">
+                <li><h6>Feedback</h6></li>
+                <li><a href="#">Leave a Feedback</a></li>
+                
+            </ul>
+        </div>
+        
+
+        </div>
+       
+
+    </div>
+    <div class="footer-buttom container-fluid row m-auto d-flex justify-content-center">
+        <div class="container-fluid d-flex">
+            <div class="col-lg-4">
+                <ul class="container  mt-3">
+                    <li ><h6>Find a store</h6>
+                        <ul >
+                            <li ><p>Find xyz@products Near You</p></li>
+                            <li><button class="find-btn col-lg-10 p-1">Store Locator</button></li>
+                            
+                        </ul>
+                    </li>
+                    
+                   
+                </ul>
+            </div>
+            <div class="col-lg-4  col-md-4 col-sm-4    ">
+                <ul class="container  mt-3">
+                    <li ><h6>Follow us</h6>
+                        <ul class="sublinks  col-8  ">
+                            <li class="twitter "><a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a></li>
+                            <li class="facebook"><a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a></li>
+                            <li class="instagram"><a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
+                            <li class="youtube"><a href="#"><i class="fa-brands fa-youtube fa-2x"></i></a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- <li><a href="#">Electronics</a></li> -->
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 ">
+                <ul class="container  mt-3">
+                    <li ><h6>Secure Online Payment</h6>
+                        <ul class="sublinks  col-8 ">
+                            <li><a href="#"><img src="./images/khalti.png" alt="" height="50px" width="50px"></a></li>
+                            <li><a href="#"><i class="fa-brands fa-cc-paypal fa-2x"></i></a></li>
+                            <li><a href="#"><img src="./images/e-sewa.jpeg" alt="" height="40px" width="40px"></a></li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- End of the Footer Section -->
+<script>
+  
+
+        
+
+      
+
+        $(document).ready(function()
+        {
+            $('.hamburger').click(function()
+            {
+                $('.links').toggleClass('active');
+                
+            });
+           
+            var userId = localStorage.getItem("userId");
+            alert(userId);
+            $.ajax({
+                type: 'Get',
+                url: "https://localhost:7086/api/user/" + userId,
+                dataType: 'json',
+                success: function (data) {
+                    for(i=0;i<data.length;i++)
+                        {
+                            // console.log(data[i]["name"]);
+                           $(".name").text(data[i]["name"]); 
+                           // Set the value of the input field
+                            $('.fname').val(data[i]["name"]);
+                            $('.username').val(data[i]["username"]);
+                            $('.contact').val(data[i]["contact_no"]);
+                            $('.email').val(data[i]["email"]);
+                            document.getElementById("myAccount").innerHTML=localStorage.getItem("textvalue");
+
+                           
+                        }
+                    
+                },
+                error: function (error) {
+                    alert(error);
+                }
+            });
+                
+             
+           
+
+        });
+       
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="./Css/Home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+    <!-- Start navbar section -->
+    <div class="navbar-wrapper text-white">
+        <!-- starting of the first part of the navbar -->
+         <div class=" navbar container  row m-auto">
+             <div class="logo col-lg-2 col-md-3 col-sm-2 col-xs-2 text-dark  d-flex justify-content-center align-items-center ">
+                 <h5>Online 
+                     <span> Retail</span></h5>
+             </div>
+             <div class="search-bar col-lg-7 col-md-6 col-sm-7 col-xs-7 text-center d-flex justify-content-center ">
+                 <div class=" search col-lg-10 col-md-10 col-sm-10 col-xs-10 d-flex  ">
+                     <input type="text" placeholder=" Search Product Here..." class="col-lg-10 border">
+                     <button class="search-btn col-lg-2 col-md-2 col-sm-2 col-xs-2"><i class="fa-solid fa-magnifying-glass text-white"></i></button>
+                 </div>
+             </div>
+             <div class="shop-cart col-lg-3 col-md-3 col-sm-3 col-xs-3 text-center justify-content-around  ">
+                 <div ><a href="#" class="user"><i class="fa-solid fa-user "></i><span id="myAccount">My Account</span></a></div>
+                 <i class=" cart fa-brands fa-opencart fa-2x "><div class="count">0</div></i>
+                 
+             </div>
+         </div>
+         <!-- End of the first part of the navbar -->
+ 
+         <!-- Starting of the second part of the navbar -->
+         <div class="second-nav row m-auto   ">
+            
+            <div class=" links-wrapper col-lg-8 col-md-8 col-sm-8 col-xs-8 d-flex  pt-2  ">
+                <div class="hamburger col-lg-1  col-md-1 col-sm-1" ><i class="fa-solid fa-bars text-dark "></i></div>
+               <div class="col-lg-11 col-md-11 col-sm-11 ">
+                <ul class="links d-flex justify-content-around">
+                    <li><a href="./Product.html" class="active">Home</a></li>
+                    <li><a href="./Aboutus.html">About Us</a></li>
+                    <li><a href="./Services.html">Our Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="./Product.html">Available Items</a></li>
+                </ul>
+               </div> 
+            </div>
+
+            <div class="buttons col-lg-3 col-md-3 col-sm-3 col-xs-3  d-flex justify-content-center align-items-center">
+               
+               <!-- <button class="login-btn px-2 py-1"><a class="text-white" href="./login.html">Login/Sign Up</a></button> -->
+                            
+            </div>
+           
+        </div>
+         <!-- End of the second part of the navbar -->
+     </div>
+    <!-- End of the navbar section -->
+
+
+    <!-- start of the content area -->
+    
+    <div class="contianer content-area">
+       <div class=" containern py-4  ">
+           <div class="form-container  m-auto">
+               <div class="form-title ">
+                   <span class="login-title">Account Login</span>
+               </div>
+              <form action="">
+                <div class="form-content  ">
+                    <div class="input-fields ">
+                        <i class="fa-solid fa-user "></i>
+                        <input class="username " type="text" placeholder="Enter Username..." id="txtUsern">
+                       
+                    </div>
+                    
+                    <div class="input-fields  ">
+                        <i class="fa-solid fa-key "></i>
+                     <input class="password  " type="password" placeholder="Enter Password..." id="txtpwd">
+                    </div>
+                    <div class="buttons  ">
+                        <button class="login-btn "><a href="#" class="text-white">login</a></button>
+                    </div>
+                    <div class="medias ">
+                        <div class="checkbox d-flex justify-content-around ">
+                            <div><input type="checkbox" name="#" id="#">
+                                <label>Remember me</label></div>
+                            <div><p><a href="#">Forgot Password?</a></p></div>
+                        </div>
+                        <div class="line border w-75 m-auto ">
+                            <div class="or border  ">OR</div>
+                        </div>
+                        <div class="icons d-flex justify-content-center align-items-center  ">
+                                
+                                <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f  "></i></a>
+                                <a href="https://www.google.com"><i class="fa-brands fa-google "></i></a>
+                                <a href="https://twitter.com"><i class="fa-brands fa-twitter "></i></a>
+                        </div>
+                    </div>
+                    <div class="register-btn conainter  ">
+                        <p>Need an acount? <a href="./register.html">Sign up</a> </p>
+                    </div>
+                    
+                </div>
+              </form>
+           </div>
+
+       </div>
+    </div>
+    <!-- End of the content area -->
+
+
+    <!-- Start of the footer section -->
+    <div class=" container-fluid footer-wrapper ">
+        <div class="  footer-seciton   m-4 row d-flex justify-content-center ">
+
+        <div class="col-lg-3  col-md-4 col-sm-5  ">
+            <ul class="container  mt-3">
+                <li><h6>Top Categories</h6></li>
+                <li><a href="#" >Mens Wears</a></li>
+                <li><a href="#">Womens Wears</a></li>
+                <li><a href="#">Kids </a></li>
+                <li><a href="#">Electronics</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-5 ">
+            <ul class="container  mt-3">
+                <li><h6>Useful Links</h6></li>
+                <li><a href="./HomePage.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us </a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Track on order</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-5 ">
+            <ul class="container  mt-3">
+                <li><h6>Help</h6></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Refunds</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Terms and Conditions of Sales</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-5 ">
+            <ul class="container  mt-3">
+                <li><h6>Feedback</h6></li>
+                <li><a href="#">Leave a Feedback</a></li>
+                
+            </ul>
+        </div>
+        
+
+        </div>
+       
+
+    </div>
+    <div class="footer-buttom container-fluid row m-auto d-flex justify-content-center">
+        <div class="container-fluid d-flex">
+            <div class="col-lg-4">
+                <ul class="container  mt-3">
+                    <li ><h6>Find a store</h6>
+                        <ul >
+                            <li ><p>Find xyz@products Near You</p></li>
+                            <li><button class="find-btn col-lg-10 p-1">Store Locator</button></li>
+                            
+                        </ul>
+                    </li>
+                    
+                   
+                </ul>
+            </div>
+            <div class="col-lg-4  col-md-4 col-sm-4    ">
+                <ul class="container  mt-3">
+                    <li ><h6>Follow us</h6>
+                        <ul class="sublinks  col-8  ">
+                            <li class="twitter "><a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a></li>
+                            <li class="facebook"><a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a></li>
+                            <li class="instagram"><a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
+                            <li class="youtube"><a href="#"><i class="fa-brands fa-youtube fa-2x"></i></a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- <li><a href="#">Electronics</a></li> -->
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 ">
+                <ul class="container  mt-3">
+                    <li ><h6>Secure Online Payment</h6>
+                        <ul class="sublinks  col-8 ">
+                            <li><a href="#"><img src="./images/khalti.png" alt="" height="50px" width="50px"></a></li>
+                            <li><a href="#"><i class="fa-brands fa-cc-paypal fa-2x"></i></a></li>
+                            <li><a href="#"><img src="./images/e-sewa.jpeg" alt="" height="40px" width="40px"></a></li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- End of the Footer Section -->
+<script>
+  
+
+        
+
+      
+
+$(document).ready(function()
+    {
+            $('.hamburger').click(function()
+            {
+                $('.links').toggleClass('active');
+                
+            });
+
+           
+  $('.login-btn').on('click',function(e)
+    {
+       
+      // $("#Result").html("button clicked")
+     var Usern= $('#txtUsern').val();
+     var Passw= $('#txtpwd').val();
+     
+      var Data ={
+         username:Usern,
+        password:Passw
+      };
+      
+      $.ajax({     
+          type:'POST',
+          url:'https://localhost:7086/api/user/Login',
+          contentType:'application/json',
+          dataType:'text',
+          data:JSON.stringify(Data),
+          success:function(response)
+          {
+            // Parse the response body to a JSON object
+            let responseJson = JSON.parse(response);
+
+            // Store the role value in the local storage
+            localStorage.setItem('role', responseJson.role);
+            localStorage.setItem('userId', responseJson.userId);
+            var role  = localStorage.getItem("role");
+            var id = localStorage.getItem("userId");
+           
+              if(role == "invalid")
+              {
+                 $("#txtUsern").val("");
+                $("#txtpwd").val("");   
+                return
+              }
+              else{
+                        if(role == "customer")
+                            {  
+                                $("#myAccount").html(Usern);
+                                localStorage.setItem("textvalue", Usern);
+                                window.location="file:///D:/mwt_assignment/Project2/Project2/Product.html";
+                                return;
+                            }
+                            else if(role  == "admin" )
+                            {
+                                $("#myAccount").html(Usern);
+                                localStorage.setItem("textvalue", Usern);
+                                window.location="file:///D:/mwt_assignment/Project2/Project2/AdminPanel.html";
+                                return;
+                            }
+                            else{
+                                alert(response);
+                            }
+              }        
+          },
+          error:function(error)
+          {
+            alert("error");
+            return;
+          }
+        });
+      e.preventDefault();
+    });
+        });
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="./Css/admin.css">
+    <link rel="stylesheet" href="./Css/Home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="adminpanel">
+        <div class="dashboard">
+            <div class="logo">
+                <h2>Admin</h2>
+                <span><i class="fa-solid fa-bars" id="hamburger"></i></span>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li class="search">
+                        <a href="#" >
+                            <i class="fa-solid fa-magnifying-glass "></i>
+                            <span class="search-field"><input type="text" placeholder="search here.."></span>
+                            <div class="secondary">Search</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-user"></i>
+                            <span class="name" id="customer">Customer</span>
+                            <div class="secondary">Customer</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-product-hunt"></i>
+                            <span class="name" id="product">Products</span>
+                            <!-- <ul class="sublinks ">
+                                <li><a href="#">Add Products</a></li>
+                                <li><a href="#">Delete Products </a></li>
+                                <li><a href="#">View Products</a></li>
+                                <li><a href="#">Add Products</a></li>
+                                <li><a href="#">Add Products</a></li>
+                            </ul> -->
+                            <div class="secondary">Products</div>
+                           
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <span class="name">Orders</span>
+                            <div class="secondary">Orders</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-receipt"></i>
+                            <span class="name">Inventory</span>
+                            <div class="secondary">Inventory</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-circle-user"></i>
+                            <span class="name">Account</span>
+                            <div class="secondary">Account</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./login.html">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <span class="name">logout</span>
+                            <div class="secondary">logout</div>
+                        </a>
+                    </li>
+                   
+                </ul>
+            </div>
+        </div>
+        <div class="content ">
+           <div class="navbar container-fluid ">
+                <div class="logo col-lg-2 col-md-3 col-sm-4 col-xs-4  text-dark  d-flex justify-content-center align-items-center ">
+                    <h5>Online 
+                        <span> Retail</span></h5>
+                </div>
+                <div class="search-bar col-lg-7 col-md-4 col-sm-3 col-xs-3 text-center d-flex justify-content-center ">
+                    <div class=" search col-lg-8 col-md-8 col-sm-8 col-xs-8 d-flex  ">
+                        <input type="text" placeholder=" Search Product Here..." class="col-lg-10 border">
+                        <button class="search-btn col-lg-2 col-md-2 col-sm-2 col-xs-2"><i class="fa-solid fa-magnifying-glass text-white"></i></button>
+                    </div>
+                </div>
+                <div class="icons col-lg-3 col-md-5 col-sm-5 col-xs-5 text-center justify-content-around  ">
+                    <div class="user border">
+                        <a href="#" >
+                            <img src="./images/benzema.jpeg" alt="" width="25px" height="25px">
+                            <span class="username text-dark pl-2">Surazz </span></a>
+                        </div>
+                    <i class=" bell fa-solid fa-bell "><div class="count">0</div></i> 
+                
+                    <i class="setting fa-solid fa-gear  "></i>
+                </div>
+           </div>
+          
+           <div class="container mt-4 border "><h5>Dashboard</h5></div>
+           <div class="short-cut container border p-4 d-flex m-auto row  ">
+               
+               <div class="activites  col-lg-4 col-md-6  col-sm-10 mt-sm-3 mt-xs-3 m-auto">
+                   <div class=" container border  ">
+                    <div>
+                        <h4>Total Users</h4>
+                        <h3>20,000</h3>
+                        <p>Increased by 10%</p></div>
+                    <div class="icon d-flex align-items-center pl-4"><i class="fa-regular fa-user-group"></i>
+                    </div>
+                   </div>
+               </div>
+               <div class="activites col-lg-4 col-md-6 col-sm-10 mt-sm-3 mt-xs-3 m-auto">
+                <div class=" container border  ">
+                    <div>
+                        <h4>Daily Visitors</h4>
+                        <h3>135</h3>
+                        <p>Increased by 3%</p></div>
+                    <div class="icon d-flex align-items-center pl-4"><i class="fa-solid fa-eye"></i>
+                    </div>
+                   </div>
+                </div>
+                <div class="activites col-lg-4 col-md-6 col-sm-10 mt-sm-3 mt-xs-3 m-auto">
+                    <div class=" container border  ">
+                        <div>
+                            <h4>New Messages</h4>
+                            <h3>20</h3>
+                             <p>Increased by 20%</p></div>
+                        <div class="icon d-flex align-items-center pl-4"><i class="fa-regular fa-message"></i>
+                        </div>
+                       </div>
+                </div>
+                
+           </div>
+
+        
+
+           <div class="container content-area border mt-4 ">
+            
+               <div class="buttons col-4 m-auto">
+                <button id="viewproduct" class="px-4 py-1 rounded ">View Products</button>
+                <button id="addproduct" class="px-4 py-1 rounded login-btn">Add Products</button>
+               </div>
+                <div id="Result">
+                    
+                  </div>
+            
+           </div>
+           
+        </div>
+    </div>
+    <script>
+        $(document).ready(function()
+        {
+
+            $('#hamburger').click(function()
+            {
+                $('.dashboard').toggleClass('active');
+                $('.content').toggleClass('activate');
+            })
+            $('.form-container').hide();
+            $(".buttons").hide();
+            $('#product').click(function()
+            {
+                $(".buttons").show();
+                $("#Result").hide();
+
+                
+            });
+            $("#addproduct").click(function()
+            {
+                window.location="file:///D:/mwt_assignment/Project2/Project2/addproduct.html";
+            });
+
+            $('#customer').click(function() {
+                    $.ajax({
+                        type: 'GET',
+                        url: "https://localhost:7086/api/user",
+                        dataType: 'json',
+                        success: function(data) {
+                            console.log(data);
+                            var table = $("<table>").addClass("table table-striped");
+                            var header = $("<thead>").append("<tr><th>ID</th><th>Name</th><th>Email</th></tr>");
+                            table.append(header);
+                            var tbody = $("<tbody>");
+                            for (i = 0; i < data.length; i++) {
+                                var row = $("<tr>");
+                                row.append("<td>" + data[i]["id"] + "</td>");
+                                row.append("<td>" + data[i]["name"] + "</td>");
+                                row.append("<td>" + data[i]["email"] + "</td>");
+                                
+                                tbody.append(row);
+                            }
+                            table.append(tbody);
+                            $("#Result").html(table);
+                        },
+                        error: function(error) {
+                            alert(error);
+                        }
+                    });
+                });
+
+
+                $('#viewproduct').click(function() {
+                    $("#Result").show();
+
+                    $.ajax({
+    type: 'GET',
+    url: "https://localhost:7086/api/product",
+    dataType: 'json',
+    success: function(data) {
+        console.log(data);
+        var table = $("<table>").addClass("table table-striped");
+        var header = $("<thead>").append("<tr><th>ID</th><th>Name</th><th>image</th><th>Quantity</th><th></th><th></th></tr>");
+        table.append(header);
+        var tbody = $("<tbody>");
+        for (i = 0; i < data.length; i++) {
+            var row = $("<tr>").addClass("editable-row");
+            row.append("<td>" + data[i]["id"] + "</td>");
+            var nameCol = $("<td>").addClass("editable-col").text(data[i]["name"]);
+            row.append(nameCol);
+            var img = $("<img>").attr("src", data[i]["product_image"]).css({ "height": "100px", "width": "100px" });
+            row.append($("<td>").append(img));
+            var quantityCol = $("<td>").addClass("editable-col").text(data[i]["quantity"]);
+            row.append(quantityCol);
+            var deleteBtn = $("<button>").text("Delete").click(function() {
+                $(this).closest("tr").remove();
+            });
+            row.append($("<td>").append(deleteBtn));
+            var editBtn = $("<button>").text("Edit").click(function() {
+                $(this).closest("tr").find(".editable-col").each(function() {
+                    var val = $(this).text();
+                    $(this).html("<input type='text' value='" + val + "'>");
+                });
+                $(this).hide();
+                $(this).siblings(".save-btn").show();
+            });
+            row.append($("<td>").append(editBtn));
+            var saveBtn = $("<button>").text("Save").hide().click(function() {
+                $(this).closest("tr").find(".editable-col").each(function() {
+                    var val = $(this).find("input").val();
+                    $(this).text(val);
+                });
+                $(this).hide();
+                $(this).siblings(".edit-btn").show();
+            });
+            row.append($("<td>").append(saveBtn));
+            tbody.append(row);
+        }
+        table.append(tbody);
+        $("#Result").html(table);
+    },
+    error: function(error) {
+        alert(error);
+    }
+});
+
+                    
+                   
+                    
+                });
+
+                
+           
+
+
+           
+
+        });
+    </script>
+</body>
+</html>

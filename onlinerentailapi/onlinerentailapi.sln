@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "onlinerentailapi", "onlinerentailapi\onlinerentailapi.csproj", "{064E4BBB-63C2-4407-8C90-674E78866B56}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{064E4BBB-63C2-4407-8C90-674E78866B56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{064E4BBB-63C2-4407-8C90-674E78866B56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{064E4BBB-63C2-4407-8C90-674E78866B56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{064E4BBB-63C2-4407-8C90-674E78866B56}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7C10E0F-A267-4EC5-AD7D-2EB76CC7EA69}
+	EndGlobalSection
+EndGlobal

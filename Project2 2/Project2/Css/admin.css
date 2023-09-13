@@ -1,0 +1,421 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+   
+}
+
+.adminpanel
+{
+    height: 100%;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+
+
+.adminpanel .dashboard
+{
+    width: 240px;
+    height: 100%;
+    background-color: #dbf1ff;
+    z-index: 99;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+.adminpanel .logo
+{
+    display: flex;
+    /* border: 1px solid black; */
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.adminpanel .menu ul li
+{
+    list-style: none;
+    margin-top: 1rem;
+    padding-left: 0.5rem;
+    
+    /* position: relative; */
+    
+}
+.adminpanel .menu ul .search 
+{
+    display: none;
+}
+
+.adminpanel .menu ul li a
+{
+    /* background-color: white; */
+    display: block;
+    
+    color: black;
+    text-decoration: none;
+    padding-left: 1rem;
+    padding-top:10px;
+    padding-bottom: 10px;
+    border-radius: 20px 0 0 20px ;
+}
+
+.adminpanel .dashboard .menu ul li .secondary
+{
+   
+    display: none;
+    
+      
+}
+
+
+
+
+
+.adminpanel .dashboard.active .menu ul li:hover .secondary
+{
+    display: block;
+    position: absolute;
+    background-color: white;
+    left: 70px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 5px 10px 5px 10px ;
+    border-radius: 10px;
+    width: 100px;
+    transform: translateY(-50%);
+    transition: all 0.5s ease-in-out;
+    /* border: 1px solid black; */
+
+    
+}
+
+
+.adminpanel .menu ul li a .name
+{
+    padding-left: 10px;
+}
+adminpanel .menu ul .search 
+{
+    display: none;
+}
+
+.adminpanel .menu ul li a:hover
+{
+    background-color: white;
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding-left: 1rem;
+    padding-top:10px;
+    padding-bottom: 10px;
+    border-radius: 20px 0 0 20px ;
+}
+
+
+.adminpanel .dashboard.active
+{
+    width: 70px;
+    transition: all 0.2s ease-in-out;
+
+}
+
+
+ 
+
+.adminpanel .dashboard.active .logo{
+    height: 50px;
+}
+
+.adminpanel .dashboard.active .logo h2{
+    
+    transition:all 1s ease-in-out ;
+    
+    display: none;
+    
+    
+}
+.adminpanel .dashboard.active .menu ul li .name{
+    display: none;
+    transition:all 0.5s ease-in-out ;
+}
+.adminpanel .dashboard.active .menu ul .search .search-field,.adminpanel .dashboard .menu ul .search i
+{
+    display: none;
+
+}
+.adminpanel .dashboard.active .menu ul .search i{
+    display: block;
+}
+
+
+
+.adminpanel .dashboard .menu ul .search a{
+    background-color: transparent;
+}
+
+/* content css area started here  */
+
+.content
+{
+    background-color: #e9ecef;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 240px;
+    width: calc(100% - 240px);
+    color:navy;
+    overflow-y: scroll;
+    scroll-behavior:smooth;
+    z-index: -2;
+    
+}
+
+
+
+
+.adminpanel .content.activate {
+    position: absolute;
+    /* height: 100px; */
+    top: 0;
+    left: 70px;
+    width: calc(100% - 70px);
+    transition: all 0.2s ease-in-out;
+    color: black;
+
+}
+
+.adminpanel .content .navbar
+{
+    /* margin-top: 10px; */
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.adminpanel .content .short-cut
+{
+    background-color: white;
+
+}
+
+
+.adminpanel .content .navbar span{
+    color: coral;
+}
+
+.adminpanel .content .navbar  .icons i{
+   font-size: 25px;
+    color: #303030;
+    opacity: 0.6;
+    position: relative;
+    
+    
+}
+.adminpanel .content .navbar  .icons i:hover{
+    opacity: 1;
+}
+
+    .adminpanel .content  .navbar .icons
+{
+    display: flex;
+
+}
+
+.adminpanel .content .navbar .icons .user
+{
+    color: #303030;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.adminpanel .content .navbar .icons .count
+{
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    color: white;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adminpanel .content .navbar .user{
+    /* border: 1px solid black; */
+    border-radius: 60px;
+    display: flex;
+   
+
+}
+
+.adminpanel .content .navbar .user img{
+    border-radius: 50%;
+    
+    
+}
+.adminpanel .content .navbar .user a{
+    padding: 3px;
+    font-weight: bold;
+    text-decoration: none;
+    /* font-family: 'Courier New', Courier, monospace; */
+}
+.adminpanel .content .short-cut
+{
+    border-radius: 10px;
+}
+.adminpanel .content .short-cut .activites .container
+{
+    /* background-color: #fff; */
+    background-color:#ff876a;
+    
+}
+.adminpanel .content .short-cut .activites:nth-child(2) .container
+{
+    background-color: #dbf1ff;
+    
+}
+.adminpanel .content .short-cut .activites:nth-child(3) .container
+{
+    /* background-color: #303030; */
+    background:#3B76EF;
+    color: white;
+    
+}
+
+.adminpanel .content .short-cut .activites .container
+{
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    
+    
+    
+}
+.adminpanel .content .short-cut .activites .icon i
+{
+    font-size: 20px;
+   
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    color: #303030;
+}
+.adminpanel .content .short-cut .activites .icon i:hover{
+    background-color: #303030;
+    color: white;
+    
+    transition: all 0.2s ease-in-out;
+   
+}
+ 
+
+.adminpanel .content .short-cut .activites .container:hover
+{
+    background-color:#3B76EF ;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.adminpanel .content .short-cut .activites:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+
+/* .adminpanel .dashboard .menu ul li{
+    
+    position: relative;
+    
+}
+
+.adminpanel .dashboard .menu ul li .sublinks
+{
+    top: 0px;
+    left: 60px;
+    display: none;
+    width: 200px;
+    
+}
+
+.adminpanel .dashboard .menu ul li:hover .sublinks
+{
+    display: block;
+    transition: all 0.3s ease-in-out;
+} */
+
+
+@media screen and (max-width:768px)
+{
+    .adminpanel .content
+    {
+        background-color: #e9ecef;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 70px;
+        width: calc(100% - 70px);
+        /* color:navy; */
+        z-index: -2;
+        
+    }
+
+    .adminpanel .content .navbar .search-bar .search input, .adminpanel .content .navbar .search-bar .search button {
+        display: none;
+
+    };
+    
+
+    .adminpanel .content .navbar .icons .user a .username  {
+        display: none;
+       
+    }
+    .adminpanel .content .navbar  .icons i:hover{
+        opacity: 1;
+    }
+    .adminpanel .dashboard .menu ul .search 
+    {
+        display: inline-flex;
+        
+    
+        
+    }
+    .adminpanel .dashboard .menu ul .search input{
+        border: 1px solid gray;
+        padding-left: 10px;
+        border-radius: 50px;
+        outline: none;
+        /* border: none; */
+    }
+   
+
+
+    
+}
+
+/* .adminpanel .content .navbar .user .username
+{
+
+    display: none;
+    
+}
+
+.adminpanel .content .navbar .user a:hover .username{
+    
+    transition: all 0.8s ease-in-out;
+    display: inline-flex;
+
+    
+} */
+
